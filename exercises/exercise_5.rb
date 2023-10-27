@@ -10,7 +10,8 @@ puts "----------"
 total_revenue = Store.sum(:annual_revenue)
 puts "Total revenue for all stores: #{total_revenue}"
 
-average_revenue = Store.sum(:annual_revenue)/Store.count
+# average_revenue = Store.sum(:annual_revenue)/Store.count
+average_revenue = Store.average(:annual_revenue)
 puts "Average revenue for all stores: #{average_revenue}"
 
 over_million = Store.where("annual_revenue >= 1000000").count
