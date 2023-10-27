@@ -23,3 +23,6 @@ annual_revenue: 190000,
 mens_apparel: true,
 womens_apparel: false,
 )
+
+puts "---- Count of items in AR ----"
+puts Store.count
